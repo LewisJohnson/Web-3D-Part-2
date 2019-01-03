@@ -6,7 +6,7 @@ class Model {
 	//method to create database connection using PHP data Objects (PDO) as the interface to SQLite
 	public function __construct(){
 		try {
-			$this->dbhandle = new PDO('sqlite:./application/model/db/models.sqlite', 'lj234', 'CupCake489!', array(
+			$this->dbhandle = new PDO('sqlite:./application/model/db/models.sqlite', '-', '-', array(
 				PDO::ATTR_ERRMODE=> PDO::ERRMODE_EXCEPTION,
 				PDO::ATTR_EMULATE_PREPARES=> false,
 			));
